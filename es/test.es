@@ -75,5 +75,11 @@
         assert 1 (response "es":: parameters:: length);
         assert (` body) (response "es":: parameters:: first);
       ).
+      (should "(response 'body') is a lambda." (=> ()
+        assert (response "body":: is-a lambda);
+
+        assert 1 (response "body":: parameters:: length);
+        assert (` data) (response "body":: parameters:: first);
+      ).
     ).
 ).

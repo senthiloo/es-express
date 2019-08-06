@@ -50,10 +50,15 @@ export mime-espresso (mime-types first);
 
 # extends response to setup Content-Type, and
 # optionally encode the body data as Espresso code.
-(response "es", (=:mime-espresso (=> body # tidy up context by an instant closure.
+(response "es" (=:mime-espresso (=> body # tidy up context by an instant closure.
   local retval this; # support currying.
-  this header "Content-Type", mime-espresso;
+  this header "Content-Type", '$(mime-espresso);charset=utf-8';
   (if (arguments not-empty) # a null will also be sent to client side.
     this send ($body to-code:: to-string); # the body could be an operation.
   ).
+).
+
+# add more readable alias, but it sends null if no data given.
+(response "body" (= data
+  this es data;
 ).

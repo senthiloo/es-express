@@ -52,9 +52,13 @@ describe('es/express', function () {
         assert.strict.equal(typeof response['es-app'], 'function')
         assert.strict.equal(response['es-app'].length, 0)
       })
-      it('response["es"] is a function ', function () {
-        assert.strict.equal(typeof response['es'], 'function')
-        assert.strict.equal(response['es'].length, 1)
+      it('response.es is a function ', function () {
+        assert.strict.equal(typeof response.es, 'function')
+        assert.strict.equal(response.es.length, 1)
+      })
+      it('response.body is a function ', function () {
+        assert.strict.equal(typeof response.body, 'function')
+        assert.strict.equal(response.body.length, 1)
       })
     })
   })
