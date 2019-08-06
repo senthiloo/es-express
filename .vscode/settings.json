@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 2,
+  "cSpell.words": [
+    "eval",
+    "leevi",
+    "nirl",
+    "nirlstudio",
+    "espress",
+    "eslang",
+    "espressolang",
+    "retval"
+  ],
+  "files.trimTrailingWhitespace": true,
+  "javascript.validate.enable": false,
+  "standard.enable": true,
+  "cSpell.ignoreWords": [
+    "mkdir",
+    "res",
+    "tful"
+  ],
+}

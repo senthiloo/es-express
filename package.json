@@ -1,0 +1,39 @@
+{
+  "name": "es-express",
+  "version": "1.0.1",
+  "description": "A wrapper of ExpressJS to simplify its usage in Espresso code.",
+  "author": {
+    "name": "Leevi Li",
+    "email": "leevi@nirlstudio.com"
+  },
+  "license": "MIT",
+  "repository": "nirlstudio/es-express",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha",
+    "test": "es :profile test es/test",
+    "install": "scripts/install",
+    "uninstall": "scripts/uninstall"
+  },
+  "keywords": [
+    "eslang",
+    "espresso",
+    "espressolang",
+    "espresso-lang",
+    "express",
+    "expressjs"
+  ],
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "dependencies": {
+    "eslang": "github:NirlStudio/eslang#development",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "standard": "^12.0.1"
+  }
+}
