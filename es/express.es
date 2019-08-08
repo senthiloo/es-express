@@ -8,10 +8,17 @@ const (request, response) express;
 
 # a middleware to parse Espresso code/data in request body.
 (export to-parse-es-body (=:is-espresso (=> (req, res, next)
-  (if (is-espresso req)
-    req "body" (eval (req "body");
+  # do nothing for non-espresso body.
+  if (is-espresso req:: fails) (return (next );
+  #
+  var data "";
+  (req on "readable", (=> ()
+    while (var chunk (this read)) (data += (chunk toString);
   ).
-  next;
+  (req on "end", (=> ()
+    req "body" (eval data);
+    next;
+  ).
 ).
 
 # a middleware to tell web browser to allow code from any origin.
