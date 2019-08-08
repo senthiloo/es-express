@@ -3,10 +3,6 @@ var assert = require('assert')
 describe('es/express', function () {
   var express = require('../index.js')
 
-  it('express["mime-espresso"] is "application/x-espresso".', function () {
-    assert.strict.equal(express['mime-espresso'], 'application/x-espresso')
-  })
-
   it('express["to-parse-es-body"] is a middleware function.', function () {
     assert.strict.equal(typeof express['to-parse-es-body'], 'function')
     assert.strict.equal(express['to-parse-es-body'].length, 3)

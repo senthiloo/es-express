@@ -1,14 +1,9 @@
 (define "express" (= ()
   const express (import "./express");
 
-  (should "(express mime-espresso) is 'application/x-espresso'." (=> ()
-    assert (express mime-espresso:: is-a string);
-    assert "application/x-espresso", (express mime-espresso);
-  ).
   (should '(express "to-parse-es-body") is a middleware' (=> ()
     var (to-parse-es-body) express;
     assert ($to-parse-es-body is-a function);
-    assert "application/x-espresso", (express mime-espresso);
 
     assert 3 ($to-parse-es-body parameters:: length);
     assert (` req) ($to-parse-es-body parameters:: first);
@@ -18,7 +13,6 @@
   (should '(express "to-allow-any-origin") is a middleware' (=> ()
     var (to-allow-any-origin) express;
     assert ($to-allow-any-origin is-a lambda);
-    assert "application/x-espresso", (express mime-espresso);
 
     assert 3 ($to-allow-any-origin parameters:: length);
     assert (` req) ($to-allow-any-origin parameters:: first);
