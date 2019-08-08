@@ -1,6 +1,6 @@
 {
   "name": "es-express",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A wrapper of ExpressJS to simplify its usage in Espresso code.",
   "author": {
     "name": "Leevi Li",
@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "eslang": "github:NirlStudio/eslang#development",
+    "eslang": "^1.0.6",
     "express": "^4.17.1"
   },
   "devDependencies": {
