@@ -1,6 +1,6 @@
 {
   "name": "es-express",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A wrapper of ExpressJS to simplify its usage in Espresso code.",
   "author": {
     "name": "Leevi Li",
@@ -11,9 +11,7 @@
   "main": "index.js",
   "scripts": {
     "mocha": "mocha",
-    "test": "es :profile test es/test",
-    "install": "scripts/install",
-    "uninstall": "scripts/uninstall"
+    "test": "es :profile test es/test"
   },
   "keywords": [
     "eslang",
