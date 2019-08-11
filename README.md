@@ -5,13 +5,13 @@ The project can be any type of default, app, module or api, which created by [es
 
 ### add dependency
 ```shell
-npm i --save es-express
+npm i --save @eslang/express
 
 ```
 
 ### use it in code
 ```python
-const express (import "es-express/express");
+const express (import "express");
 
 # to create a plain ExpressJS app.
 var app (express app);
@@ -21,7 +21,7 @@ var app (express api);
 
 # to create an ExpressJS app which supports Espresso data in request body and
 # allow requests from any origin when called in web browsers.
-var app (express public-api);
+var app (express service);
 
 ```
 

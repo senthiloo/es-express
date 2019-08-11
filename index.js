@@ -12,4 +12,4 @@ var srcHome = path.join(__dirname, 'es')
 var being = $void.createBootstrapSpace(path.join(srcHome, '@'))
 
 // export an Espresso module to JS.
-module.exports = being.$import('./es-express')
+module.exports = being.$import('./express')

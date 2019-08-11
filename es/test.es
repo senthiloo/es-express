@@ -1,5 +1,5 @@
 (define "express" (= ()
-  const express (import "./es-express");
+  const express (import "./express");
 
   (should '(express "to-parse-es-body") is a middleware' (=> ()
     var (to-parse-es-body) express;
