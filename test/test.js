@@ -21,8 +21,8 @@ describe('es/express', function () {
     assert.strict.equal(typeof app.use, 'function')
   })
 
-  it('express["public-api"]() returns an Espresso generic function object.', function () {
-    var app = express['public-api']()
+  it('express["service"]() returns an Espresso generic function object.', function () {
+    var app = express['service']()
     assert.strict.equal(typeof app, 'object')
     assert.strict.equal(typeof app.call, 'function')
     assert.strict.equal(typeof app.new, 'function')

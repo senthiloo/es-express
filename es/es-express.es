@@ -41,7 +41,7 @@ const (request, response) express;
 ).
 
 # create an express application to serve as a public api.
-(export public-api (=> ()
+(export service (=> ()
   local retval (express "call":: apply *, arguments:: generic);
   retval use to-parse-es-body;
   retval use to-allow-any-origin;

@@ -1,5 +1,5 @@
 (define "express" (= ()
-  const express (import "./express");
+  const express (import "./es-express");
 
   (should '(express "to-parse-es-body") is a middleware' (=> ()
     var (to-parse-es-body) express;
@@ -35,8 +35,8 @@
     assert (app "new":: is-a function);
     assert (app "use":: is-a function);
   ).
-  (should "(express public-api) returns an express app object." (=> ()
-    var app (express public-api);
+  (should "(express service) returns an express app object." (=> ()
+    var app (express service);
     assert (app is-an object);
 
     assert (app "call":: is-a function);
