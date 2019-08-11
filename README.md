@@ -11,17 +11,17 @@ npm i --save es-express
 
 ### use it in code
 ```python
-const express (import "es-express/express");
+const express (import "es-express");
 
 # to create a plain ExpressJS app.
 var app (express app);
 
 # to create an ExpressJS app which supports Espresso data in request body.
-var app (express api);
+var api (express api);
 
 # to create an ExpressJS app which supports Espresso data in request body and
 # allow requests from any origin when called in web browsers.
-var app (express public-api);
+var service (express service);
 
 ```
 
