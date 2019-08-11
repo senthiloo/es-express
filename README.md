@@ -17,11 +17,11 @@ const express (import "express");
 var app (express app);
 
 # to create an ExpressJS app which supports Espresso data in request body.
-var app (express api);
+var api (express api);
 
 # to create an ExpressJS app which supports Espresso data in request body and
 # allow requests from any origin when called in web browsers.
-var app (express service);
+var service (express service);
 
 ```
 
