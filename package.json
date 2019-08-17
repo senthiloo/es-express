@@ -1,6 +1,6 @@
 {
   "name": "es-express",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A wrapper of ExpressJS to simplify its usage in Espresso code.",
   "author": {
     "name": "Leevi Li",
